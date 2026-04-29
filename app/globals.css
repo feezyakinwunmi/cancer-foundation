@@ -1,26 +1,168 @@
+/* src/app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Theme configuration */
+@theme {
+  --color-primary-50: #e6f0ff;
+  --color-primary-100: #b3d1ff;
+  --color-primary-200: #80b3ff;
+  --color-primary-300: #4d94ff;
+  --color-primary-400: #1a75ff;
+  --color-primary-500: #005ce6;
+  --color-primary-600: #0047b3;
+  --color-primary-700: #003180;
+  --color-primary-800: #001c4d;
+  --color-primary-900: #000e26;
+  
+  --color-dark-100: #1a1a1a;
+  --color-dark-200: #0d0d0d;
+  --color-dark-300: #000000;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --animate-slide-left: slideLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  --animate-slide-right: slideRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  --animate-fade-in: fadeIn 1s ease-out;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Keyframes */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Base styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%);
+  font-family: var(--font-sans);
+  color: white;
+}
+
+
+/* Simple slot machine animation */
+.rotator-container {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  height: 1.3em;
+}
+
+.rotator-track {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.rotator-current {
+  position: absolute;
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.rotator-current.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.rotator-next {
+  position: absolute;
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.rotator-next.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* 3D Text Rotator Styles */
+.text-rotator {
+  perspective: 1200px;
+  display: inline-block;
+  height: 1.3em;
+  overflow: visible;
+}
+
+.text-rotator-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-origin: center center;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #005ce6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0047b3;
+}
+
+/* Selection color */
+::selection {
+  background: #005ce6;
+  color: white;
 }
