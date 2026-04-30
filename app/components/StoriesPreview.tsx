@@ -29,7 +29,7 @@ const stories = [
     quote: 'Her songs fill her home again, stronger, sweeter, and more hopeful than before.',
     color: 'from-pink-500/20 to-pink-600/10',
     iconColor: 'text-pink-400',
-    image: '/ami.jpg'
+    image: '/amir.jpg'
   },
   {
     name: 'Chinedu',

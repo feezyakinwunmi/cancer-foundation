@@ -53,7 +53,7 @@ const programs = [
     description: 'Educating communities to recognize symptoms early.',
     color: 'text-purple-400',
     bgColor: 'bg-purple-400/10',
-    image: '/ed.png',
+    image: '/ca.png',
     stat: '50+',
     statLabel: 'Communities reached'
   }
@@ -138,11 +138,11 @@ export default function ProgramsPreview() {
                     onError={() => handleImageError(index)}
                   />
                 ) : (
-                  <div className="absolute inset-0 bg-gradient-to-br from-dark-300 to-dark-200" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-black to-dark-300" />
                 )}
                 
                 {/* Dark Overlay for text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-300 via-dark-300/70 to-dark-300/30" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-dark-300/30" />
                 
                 {/* Color Gradient Overlay matching the program */}
                 <div className={`absolute inset-0 ${program.bgColor} mix-blend-overlay opacity-40`} />

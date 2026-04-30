@@ -85,21 +85,7 @@ export default function DonateCTA() {
               </div>
             </div>
 
-            {/* Trust Badges */}
-            <div className="flex flex-wrap gap-4 mb-8">
-              <div className="flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-full">
-                <Shield className="w-4 h-4 text-green-400" />
-                <span className="text-white/60 text-xs">100% Transparent</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-full">
-                <TrendingUp className="w-4 h-4 text-green-400" />
-                <span className="text-white/60 text-xs">Tax Deductible</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-full">
-                <Heart className="w-4 h-4 text-green-400" />
-                <span className="text-white/60 text-xs">Direct Impact</span>
-              </div>
-            </div>
+           
 
             {/* Donate Button */}
             <Link

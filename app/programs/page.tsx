@@ -50,7 +50,7 @@ const programs = [
     description: 'Educating communities across Nigeria to recognize symptoms early and seek help before time runs out.',
     impact: '50+ communities reached',
     features: ['School visits', 'Community outreach', 'Early detection training', 'Awareness campaigns'],
-    image: '/ed.png',
+    image: '/ca.png',
     iconColor: 'text-purple-400'
   }
 ]

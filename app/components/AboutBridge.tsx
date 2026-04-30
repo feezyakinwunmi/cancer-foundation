@@ -53,7 +53,7 @@ export default function AboutBridge() {
           <div className="w-20 h-1 bg-gradient-to-r from-primary-400 to-primary-600 mx-auto mt-4 rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-40 items-center">
           {/* Left Side - Text Content */}
           <div 
             className={`transition-all duration-700 delay-300 ${
@@ -115,7 +115,7 @@ export default function AboutBridge() {
                     src="/CCCSF 6.jpeg"
                     alt="Bridge Image"
                     fill
-                    className="object-cover object-center opacity-80"
+                    className="object-fill opacity-80"
                   />
                   <Heart className="w-16 h-16 text-primary-400 animate-pulse" />
                 </div>

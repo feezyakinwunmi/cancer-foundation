@@ -33,7 +33,7 @@ const stories = [
     dream: 'Wants to become a singer',
     shortDesc: 'Her voice returned stronger than ever',
     fullStory: 'Amina\'s singing filled every room she entered. When persistent leg pain turned out to be bone cancer, her family faced long hospital stays, multiple procedures, and a future that felt uncertain. Through financial assistance, emotional support, and consistent advocacy, we walked alongside Amina and her family every step of the way, ensuring that her education and her dreams were never abandoned. Today, Amina has completed treatment. Her songs fill her home again, stronger, sweeter, and more hopeful than before.',
-    image: '/ami.jpg',
+    image: '/amir.jpg',
     imageColor: 'from-pink-500/20 to-pink-600/10',
     color: 'text-pink-400',
     bg: 'bg-pink-400/10'

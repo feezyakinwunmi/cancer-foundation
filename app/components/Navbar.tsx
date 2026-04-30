@@ -30,7 +30,7 @@ export default function Navbar() {
       href: '/about',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'Vision', href: '/about#vission' },
+        { name: 'Vision', href: '/about#vision' },
         { name: 'Mission', href: '/about#mission' },
         { name: 'Core Values', href: '/about#values' },
         { name: 'Our Story', href: '/about#story' },
