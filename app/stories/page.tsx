@@ -91,7 +91,7 @@ export default function StoriesPage() {
 
       />
 
-      <section className=" bg-dark-300">
+      <section className=" bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Stories Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -102,7 +102,7 @@ export default function StoriesPage() {
                 style={{ transitionDelay: `${index * 100}ms` }}
                 onClick={() => openModal(story)}
               >
-                <div className="bg-dark-200 rounded-2xl overflow-hidden border border-white/10 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-2">
+                <div className="bg-dark-200 rounded-2xl overflow-hidden border border-black/10 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-2">
                   {/* Image Container */}
                   <div className="relative h-64 overflow-hidden">
                     {!imageErrors[story.id] ? (
@@ -116,8 +116,8 @@ export default function StoriesPage() {
                     ) : (
                       <div className={`absolute inset-0 bg-gradient-to-br ${story.imageColor}`}>
                         <div className="w-full h-full flex items-center justify-center">
-                          <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                            <span className="text-4xl font-bold text-white/60">{story.name[0]}</span>
+                          <div className="w-24 h-24 rounded-full bg-black/10 backdrop-blur-sm flex items-center justify-center">
+                            <span className="text-4xl font-bold text-black/60">{story.name[0]}</span>
                           </div>
                         </div>
                       </div>
@@ -139,14 +139,14 @@ export default function StoriesPage() {
 
                   {/* Content */}
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-1">{story.name}, {story.age}</h3>
-                    <div className="flex items-center gap-2 text-white/40 text-sm mb-3">
+                    <h3 className="text-xl font-bold text-black mb-1">{story.name}, {story.age}</h3>
+                    <div className="flex items-center gap-2 text-black/40 text-sm mb-3">
                       <MapPin className="w-3 h-3" />
                       <span>{story.location}</span>
                       <span>•</span>
                       <span>{story.condition}</span>
                     </div>
-                    <p className="text-white/50 text-sm mb-4 line-clamp-2">{story.shortDesc}</p>
+                    <p className="text-black/50 text-sm mb-4 line-clamp-2">{story.shortDesc}</p>
                     <div className="inline-flex items-center gap-1 text-primary-400 text-sm font-semibold group-hover:gap-2 transition-all">
                       Read full story <ArrowRight className="w-3 h-3" />
                     </div>
@@ -158,10 +158,10 @@ export default function StoriesPage() {
 
           {/* Call to Action */}
           <div className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-primary-500/10 to-pink-500/10 rounded-2xl p-8 border border-white/10">
-              <h3 className="text-2xl font-bold text-white mb-2">Want to help create more success stories?</h3>
-              <p className="text-white/50 mb-6">Your support can change a child's life today</p>
-              <Link href="/donate" className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300">
+            <div className="bg-gradient-to-r from-primary-500/10 to-pink-500/10 rounded-2xl p-8 border border-black/10">
+              <h3 className="text-2xl font-bold text-black mb-2">Want to help create more success stories?</h3>
+              <p className="text-black/50 mb-6">Your support can change a child's life today</p>
+              <Link href="/donate" className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-black px-6 py-3 rounded-full font-semibold transition-all duration-300">
                 Support More Children <Heart className="w-4 h-4" />
               </Link>
             </div>
@@ -180,15 +180,15 @@ export default function StoriesPage() {
           
           {/* Modal Content */}
           <div 
-            className="relative bg-dark-200 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-white/10 shadow-2xl animate-in zoom-in duration-300"
+            className="relative bg-dark-200 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-black/10 shadow-2xl animate-in zoom-in duration-300"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+              className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/10 hover:bg-black/20 flex items-center justify-center transition-colors"
             >
-              <X className="w-5 h-5 text-white" />
+              <X className="w-5 h-5 text-black" />
             </button>
 
             {/* Modal Image */}
@@ -204,8 +204,8 @@ export default function StoriesPage() {
               ) : (
                 <div className={`absolute inset-0 bg-gradient-to-br ${selectedStory.imageColor}`}>
                   <div className="w-full h-full flex items-center justify-center">
-                    <div className="w-32 h-32 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                      <span className="text-6xl font-bold text-white/60">{selectedStory.name[0]}</span>
+                    <div className="w-32 h-32 rounded-full bg-black/10 backdrop-blur-sm flex items-center justify-center">
+                      <span className="text-6xl font-bold text-black/60">{selectedStory.name[0]}</span>
                     </div>
                   </div>
                 </div>
@@ -218,11 +218,11 @@ export default function StoriesPage() {
 
             {/* Modal Content */}
             <div className="p-6 md:p-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+              <h2 className="text-2xl md:text-3xl font-bold text-black mb-2">
                 {selectedStory.name}, {selectedStory.age}
               </h2>
               
-              <div className="flex flex-wrap items-center gap-3 text-white/40 text-sm mb-4">
+              <div className="flex flex-wrap items-center gap-3 text-black/40 text-sm mb-4">
                 <div className="flex items-center gap-1">
                   <MapPin className="w-3 h-3" />
                   <span>{selectedStory.location}</span>
@@ -241,12 +241,12 @@ export default function StoriesPage() {
                 <span className="text-green-400 text-xs font-semibold">{selectedStory.outcome}</span>
               </div>
 
-              <div className="space-y-4 text-white/60 leading-relaxed">
+              <div className="space-y-4 text-black/60 leading-relaxed">
                 <p>{selectedStory.fullStory}</p>
               </div>
 
-              <div className="mt-6 p-4 bg-white/5 rounded-xl border border-white/10">
-                <p className="text-white/40 text-sm italic">
+              <div className="mt-6 p-4 bg-black/5 rounded-xl border border-black/10">
+                <p className="text-black/40 text-sm italic">
                   "{selectedStory.dream}"
                 </p>
               </div>
@@ -255,13 +255,13 @@ export default function StoriesPage() {
                 <Link
                   href="/donate"
                   onClick={closeModal}
-                  className="flex-1 bg-primary-500 hover:bg-primary-600 text-white py-3 rounded-xl font-semibold transition-all duration-300 text-center"
+                  className="flex-1 bg-primary-500 hover:bg-primary-600 text-black py-3 rounded-xl font-semibold transition-all duration-300 text-center"
                 >
                   Support a Child
                 </Link>
                 <button
                   onClick={closeModal}
-                  className="flex-1 border border-white/30 hover:border-white/50 text-white/70 hover:text-white py-3 rounded-xl font-semibold transition-all duration-300"
+                  className="flex-1 border border-black/30 hover:border-black/50 text-black/70 hover:text-black py-3 rounded-xl font-semibold transition-all duration-300"
                 >
                   Close
                 </button>

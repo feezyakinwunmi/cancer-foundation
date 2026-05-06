@@ -59,12 +59,12 @@ export default function StoriesPreview() {
   }
 
   return (
-    <section className="relative py-20 sm:py-28 bg-dark-300 overflow-hidden">
+    <section className="relative py-20 sm:py-28 bg-white overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse delay-700" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-500/3 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse delay-700" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,7 +96,7 @@ export default function StoriesPreview() {
             </span>
             {' '}Real change.
           </h2>
-          <p className="text-white/50 max-w-2xl mx-auto">
+          <p className="text-black/50 max-w-2xl mx-auto">
             Every child we help has a name, a story, and a future. These are their journeys.
           </p>
         </div>
@@ -127,8 +127,8 @@ export default function StoriesPreview() {
                     />
                   ) : (
                     <div className={`w-full h-full bg-gradient-to-br ${story.color} flex items-center justify-center`}>
-                      <div className="w-32 h-32 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border-2 border-white/20">
-                        <span className="text-5xl font-bold text-white/60">{story.name[0]}</span>
+                      <div className="w-32 h-32 rounded-full bg-black/10 backdrop-blur-sm flex items-center justify-center border-2 border-black/20">
+                        <span className="text-5xl font-bold text-black/60">{story.name[0]}</span>
                       </div>
                     </div>
                   )}
@@ -143,18 +143,18 @@ export default function StoriesPreview() {
 
               {/* Content */}
               <div className="relative p-6 -mt-20 z-10">
-                <div className="bg-dark-200/90 backdrop-blur-sm rounded-xl p-5 border border-white/10 shadow-xl">
+                <div className="bg-dark-200/90 backdrop-blur-sm rounded-xl p-5 border border-black/10 shadow-xl">
                   {/* Quote Icon */}
                   <Quote className={`w-8 h-8 ${story.iconColor} opacity-50 mb-3`} />
                   
-                  <p className="text-white/70 text-sm italic mb-4">
+                  <p className="text-black/70 text-sm italic mb-4">
                     "{story.quote}"
                   </p>
                   
-                  <h3 className="text-white font-bold text-xl mb-1">
+                  <h3 className="text-black font-bold text-xl mb-1">
                     {story.name}, {story.age}
                   </h3>
-                  <p className="text-white/40 text-sm mb-2">{story.location} • {story.condition}</p>
+                  <p className="text-black/40 text-sm mb-2">{story.location} • {story.condition}</p>
                   
                   {/* Outcome Badge */}
                   <div className="inline-flex items-center gap-1 bg-green-500/10 px-2 py-1 rounded-full mb-3">
@@ -162,7 +162,7 @@ export default function StoriesPreview() {
                     <p className="text-green-400 text-xs font-semibold">{story.outcome}</p>
                   </div>
                   
-                  <p className="text-white/50 text-xs">{story.dream}</p>
+                  <p className="text-black/50 text-xs">{story.dream}</p>
                 </div>
               </div>
 
@@ -176,7 +176,7 @@ export default function StoriesPreview() {
 
         {/* Impact Banner */}
         <div 
-          className={`mt-12 bg-gradient-to-r from-pink-500/5 via-primary-500/5 to-blue-500/5 rounded-2xl p-6 border border-white/10 transition-all duration-700 delay-500 ${
+          className={`mt-12 bg-gradient-to-r from-pink-500/5 via-primary-500/5 to-blue-500/5 rounded-2xl p-6 border border-black/10 transition-all duration-700 delay-500 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
@@ -190,13 +190,13 @@ export default function StoriesPreview() {
                 ))}
               </div>
               <div>
-                <p className="text-white/40 text-sm">Their lives changed forever</p>
-                <p className="text-white font-semibold text-lg">And we're <span className="text-primary-400">just getting started</span></p>
+                <p className="text-black/40 text-sm">Their lives changed forever</p>
+                <p className="text-black font-semibold text-lg">And we're <span className="text-primary-400">just getting started</span></p>
               </div>
             </div>
             <Link
               href="/stories"
-              className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 group border border-white/10"
+              className="inline-flex items-center gap-2 bg-black/5 hover:bg-black/10 text-black px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 group border border-black/10"
             >
               Read all stories
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

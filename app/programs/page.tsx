@@ -72,13 +72,13 @@ export default function ProgramsPage() {
 imageUrl="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600&h=900&fit=crop"
       />
 
-      <section className="py-20 bg-dark-300">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-12">
             {programs.map((program, index) => (
               <div 
                 key={program.title}
-                className={`bg-dark-200 rounded-2xl overflow-hidden border border-white/10 hover:border-primary-500/30 transition-all duration-500 group ${
+                className={`bg-dark-200 rounded-2xl overflow-hidden border border-black/10 hover:border-primary-500/30 transition-all duration-500 group ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
@@ -99,27 +99,27 @@ imageUrl="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600&h=
                     
                     {/* Icon overlay */}
                     <div className="absolute top-4 left-4">
-                      <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-full bg-black/10 backdrop-blur-sm flex items-center justify-center">
                         <program.icon className={`w-6 h-6 ${program.iconColor}`} />
                       </div>
                     </div>
                     
                     {/* Impact text overlay */}
                     <div className="absolute bottom-4 left-4 right-4">
-                      <p className="text-white/80 text-sm font-semibold">{program.impact}</p>
+                      <p className="text-black/80 text-sm font-semibold">{program.impact}</p>
                     </div>
                   </div>
 
                   {/* Right Side - Content */}
                   <div className="lg:col-span-2 p-8">
-                    <h3 className="text-2xl font-bold text-white mb-4">{program.title}</h3>
-                    <p className="text-white/60 mb-6 leading-relaxed">{program.description}</p>
+                    <h3 className="text-2xl font-bold text-black mb-4">{program.title}</h3>
+                    <p className="text-black/60 mb-6 leading-relaxed">{program.description}</p>
                     
                     <div className="grid grid-cols-2 gap-3 mb-8">
                       {program.features.map((feature) => (
                         <div key={feature} className="flex items-center gap-2">
                           <CheckCircle className="w-4 h-4 text-green-400" />
-                          <span className="text-white/40 text-sm">{feature}</span>
+                          <span className="text-black/40 text-sm">{feature}</span>
                         </div>
                       ))}
                     </div>

@@ -120,8 +120,8 @@ export default function AboutPage() {
               <div className="w-16 h-16 rounded-full bg-primary-500/20 flex items-center justify-center mb-4">
                 <Eye className="w-8 h-8 text-primary-400" />
               </div>
-              <h2 className="text-2xl font-bold text-white mb-3">Our Vision</h2>
-              <p className="text-white/60 leading-relaxed">
+              <h2 className="text-2xl font-bold text-black mb-3">Our Vision</h2>
+              <p className="text-black/60 leading-relaxed">
                 A Nigeria where no child's survival depends on their family's income, 
                 where quality cancer care, strong support systems, and hope are available 
                 to every child, in every community.
@@ -132,8 +132,8 @@ export default function AboutPage() {
               <div className="w-16 h-16 rounded-full bg-primary-500/20 flex items-center justify-center mb-4">
                 <Target className="w-8 h-8 text-primary-400" />
               </div>
-              <h2 className="text-2xl font-bold text-white mb-3">Our Mission</h2>
-              <p className="text-white/60 leading-relaxed">
+              <h2 className="text-2xl font-bold text-black mb-3">Our Mission</h2>
+              <p className="text-black/60 leading-relaxed">
                 To ease the burden on families fighting childhood cancer by providing 
                 financial aid, medical assistance, emotional care, and community education, 
                 so every child has the opportunity to fight, recover, and thrive.
@@ -151,7 +151,7 @@ export default function AboutPage() {
               <Sparkles className="w-4 h-4 text-primary-400" />
               <span className="text-primary-400 text-sm font-semibold">Our Principles</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">What We Stand For</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">What We Stand For</h2>
             <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full" />
             <p className="text-white/50 mt-4 max-w-2xl mx-auto">Our core values guide everything we do, every decision we make</p>
           </div>
@@ -178,13 +178,13 @@ export default function AboutPage() {
                 <Heart className="w-4 h-4 text-pink-400" />
                 <span className="text-pink-400 text-sm font-semibold">How It Began</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">It started with one little girl named <span className="text-pink-400">Amara</span></h2>
-              <div className="space-y-4 text-white/60 leading-relaxed">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 ">It started with one little girl named <span className="text-pink-400">Amara</span></h2>
+              <div className="space-y-4 text-text-gray-600 leading-relaxed">
                 <p>In 2021, Amara, a bright, determined young girl, was diagnosed with leukaemia. Her parents did everything imaginable to save her. They sold furniture, borrowed from relatives, gave up everything. And still, it was not enough.</p>
                 <p>A small group of people who heard their story could not stand by. Funds were raised. Treatment was covered. A family was not left alone.</p>
                 <p>Amara's courage sparked something none of us expected. What began as one act of solidarity became a mission we could not walk away from.</p>
                 <div className="bg-white/5 rounded-xl p-4 border-l-4 border-pink-400">
-                  <p className="text-white font-semibold">Today, that mission has grown into a foundation that has supported over 100 children and their families. Amara's story is the reason we exist, and every child we help is the reason we continue.</p>
+                  <p className="text-gray-600 font-semibold">Today, that mission has grown into a foundation that has supported over 100 children and their families. Amara's story is the reason we exist, and every child we help is the reason we continue.</p>
                 </div>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function AboutPage() {
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Meet Our Team</h2>
             <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full" />
-            <p className="text-white/50 mt-4 max-w-2xl mx-auto">Dedicated professionals committed to making a difference in the lives of children and families</p>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Dedicated professionals committed to making a difference in the lives of children and families</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -307,7 +307,7 @@ export default function AboutPage() {
 
           {/* Team CTA */}
           <div className="text-center mt-12">
-            <p className="text-white/40 text-sm mb-4">Want to join our team? We're always looking for passionate individuals</p>
+            <p className="text-gray-600 text-sm mb-4">Want to join our team? We're always looking for passionate individuals</p>
             <Link href="/volunteer" className="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 font-semibold transition-colors">
               View Open Positions <ArrowRight className="w-4 h-4" />
             </Link>
@@ -318,7 +318,7 @@ export default function AboutPage() {
       {/* Milestones Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 text-white">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Journey</h2>
             <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full" />
             <p className="text-white/50 mt-4">Milestones that mark our growth and impact</p>
@@ -330,8 +330,8 @@ export default function AboutPage() {
                   <milestone.icon className="w-6 h-6 text-primary-400" />
                 </div>
                 <p className="text-primary-400 font-bold text-xl">{milestone.year}</p>
-                <p className="text-white font-semibold text-sm">{milestone.title}</p>
-                <p className="text-white/40 text-xs">{milestone.desc}</p>
+                <p className="text-gray-600 font-semibold text-sm">{milestone.title}</p>
+                <p className="text-gray-600 text-xs">{milestone.desc}</p>
               </div>
             ))}
           </div>
@@ -351,7 +351,7 @@ export default function AboutPage() {
               <div key={stat.label} className={`text-center p-6 bg-white/5 rounded-xl border border-white/10 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${index * 100}ms` }}>
                 <stat.icon className={`w-8 h-8 ${stat.color} mx-auto mb-3`} />
                 <div className="text-3xl sm:text-4xl font-bold text-primary-400 mb-2">{stat.number}</div>
-                <p className="text-white/50 text-sm">{stat.label}</p>
+                <p className="text-gray-600 text-sm">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -362,7 +362,7 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-primary-500/10 via-pink-500/10 to-primary-500/10 rounded-2xl p-8 md:p-12 text-center border border-white/10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Want to Make a Difference?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Want to Make a Difference?</h2>
             <p className="text-white/60 mb-6 max-w-2xl mx-auto">
               Join us in our mission to ensure no child fights cancer alone.
             </p>

@@ -90,12 +90,12 @@ export default function EventsPage() {
 imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=900&fit=crop"
       />
 
-      <section className="py-20 bg-dark-300">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Featured Event - LUTH Visit */}
           <div className="mb-16">
-            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary-900/30 to-pink-900/30 border border-white/10">
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary-900/30 to-pink-900/30 border border-black/10">
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl" />
               
@@ -108,7 +108,7 @@ imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                   {/* Left Side - Content */}
                   <div>
-                    <div className="flex items-center gap-2 text-white/40 text-sm mb-3">
+                    <div className="flex items-center gap-2 text-black/40 text-sm mb-3">
                       <Building className="w-4 h-4" />
                       <span>Lagos State University Teaching Hospital (LUTH), Ikeja</span>
                       <span>•</span>
@@ -116,61 +116,61 @@ imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=
                       <span>April 2026</span>
                     </div>
                     
-                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                    <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
                       Lagos State University Teaching Hospital (LUTH) Outreach
                     </h2>
                     
-                    <p className="text-white/60 mb-4 leading-relaxed">
+                    <p className="text-black/60 mb-4 leading-relaxed">
                       Our team visited the pediatric oncology ward at LUTH to provide financial support, 
                       care packages, and hope to children battling cancer. It was a day filled with 
                       emotions, smiles, and the promise of a better tomorrow.
                     </p>
                     
-                    <div className="bg-white/5 rounded-xl p-4 mb-4">
+                    <div className="bg-black/5 rounded-xl p-4 mb-4">
                       <div className="flex items-center gap-3 mb-2">
                         <Gift className="w-5 h-5 text-primary-400" />
-                        <span className="text-white font-semibold">Donation Made:</span>
+                        <span className="text-black font-semibold">Donation Made:</span>
                         <span className="text-2xl font-bold text-primary-400">₦560,000</span>
                       </div>
-                      <p className="text-white/40 text-sm">
+                      <p className="text-black/40 text-sm">
                         Funds will cover chemotherapy sessions, essential medications, and nutritional 
                         support for children currently undergoing treatment at LUTH.
                       </p>
                     </div>
                     
                     <div className="flex flex-wrap gap-3">
-                      <div className="flex items-center gap-2 bg-white/5 rounded-full px-3 py-1">
+                      <div className="flex items-center gap-2 bg-black/5 rounded-full px-3 py-1">
                         <Users className="w-3 h-3 text-green-400" />
-                        <span className="text-white/50 text-xs">15+ children impacted</span>
+                        <span className="text-black/50 text-xs">15+ children impacted</span>
                       </div>
-                      <div className="flex items-center gap-2 bg-white/5 rounded-full px-3 py-1">
+                      <div className="flex items-center gap-2 bg-black/5 rounded-full px-3 py-1">
                         <Award className="w-3 h-3 text-yellow-400" />
-                        <span className="text-white/50 text-xs">Direct family support</span>
+                        <span className="text-black/50 text-xs">Direct family support</span>
                       </div>
-                      <div className="flex items-center gap-2 bg-white/5 rounded-full px-3 py-1">
+                      <div className="flex items-center gap-2 bg-black/5 rounded-full px-3 py-1">
                         <TrendingUp className="w-3 h-3 text-blue-400" />
-                        <span className="text-white/50 text-xs">Ongoing partnership</span>
+                        <span className="text-black/50 text-xs">Ongoing partnership</span>
                       </div>
                     </div>
                   </div>
                   
                   {/* Right Side - Stats Highlights */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white/5 rounded-xl p-4 text-center">
+                    <div className="bg-black/5 rounded-xl p-4 text-center">
                       <p className="text-2xl font-bold text-primary-400">₦560K</p>
-                      <p className="text-white/40 text-xs">Total Donation</p>
+                      <p className="text-black/40 text-xs">Total Donation</p>
                     </div>
-                    <div className="bg-white/5 rounded-xl p-4 text-center">
+                    <div className="bg-black/5 rounded-xl p-4 text-center">
                       <p className="text-2xl font-bold text-primary-400">15+</p>
-                      <p className="text-white/40 text-xs">Children Supported</p>
+                      <p className="text-black/40 text-xs">Children Supported</p>
                     </div>
-                    <div className="bg-white/5 rounded-xl p-4 text-center">
+                    <div className="bg-black/5 rounded-xl p-4 text-center">
                       <p className="text-2xl font-bold text-primary-400">50+</p>
-                      <p className="text-white/40 text-xs">Care Packages</p>
+                      <p className="text-black/40 text-xs">Care Packages</p>
                     </div>
-                    <div className="bg-white/5 rounded-xl p-4 text-center">
+                    <div className="bg-black/5 rounded-xl p-4 text-center">
                       <p className="text-2xl font-bold text-primary-400">10+</p>
-                      <p className="text-white/40 text-xs">Staff Volunteers</p>
+                      <p className="text-black/40 text-xs">Staff Volunteers</p>
                     </div>
                   </div>
                 </div>
@@ -181,9 +181,9 @@ imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=
           {/* Photo Gallery Section */}
           <div className="mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-white mb-2">LUTH Outreach Photo Gallery</h3>
+              <h3 className="text-2xl font-bold text-black mb-2">LUTH Outreach Photo Gallery</h3>
               <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-3" />
-              <p className="text-white/50 text-sm max-w-2xl mx-auto">
+              <p className="text-black/50 text-sm max-w-2xl mx-auto">
                 Capturing moments of compassion, hope, and healing from our visit to LUTH
               </p>
             </div>
@@ -192,7 +192,7 @@ imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=
               {galleryImages.map((image, index) => (
                 <div
                   key={image.id}
-                  className={`group relative bg-dark-200 rounded-xl overflow-hidden cursor-pointer border border-white/10 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-1 ${
+                  className={`group relative bg-dark-200 rounded-xl overflow-hidden cursor-pointer border border-black/10 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-1 ${
                     isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                   }`}
                   style={{ transitionDelay: `${index * 100}ms` }}
@@ -207,28 +207,28 @@ imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=
                         height={300}
                         className="object-cover object-center rounded-lg transition-transform duration-700 group-hover:scale-110"
                       />
-                      <p className="text-white/40 text-xs">{image.title}</p>
+                      <p className="text-black/40 text-xs">{image.title}</p>
                     </div>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-dark-300 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
-                    <p className="text-white text-xs text-center">{image.description}</p>
+                    <p className="text-black text-xs text-center">{image.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <p className="text-white/30 text-xs text-center mt-4">
+            <p className="text-black/30 text-xs text-center mt-4">
               * Click on any image to view full size
             </p>
           </div>
 
           {/* Other Events Grid */}
-          <h3 className="text-2xl font-bold text-white mb-6 text-center">Upcoming Campaigns & Events</h3>
+          <h3 className="text-2xl font-bold text-black mb-6 text-center">Upcoming Campaigns & Events</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {events.map((event, index) => (
               <div 
                 key={event.title}
-                className={`bg-dark-200 rounded-2xl p-6 border border-white/10 hover:border-${event.color.replace('text-', '')}/30 transition-all duration-300 group hover:-translate-y-2 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
+                className={`bg-dark-200 rounded-2xl p-6 border border-black/10 hover:border-${event.color.replace('text-', '')}/30 transition-all duration-300 group hover:-translate-y-2 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-start gap-4">
@@ -241,14 +241,14 @@ imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=
                         {event.type}
                       </span>
                     </div>
-                    <h3 className="text-white font-bold text-xl mb-2">{event.title}</h3>
-                    <p className="text-white/50 text-sm mb-4">{event.description}</p>
+                    <h3 className="text-black font-bold text-xl mb-2">{event.title}</h3>
+                    <p className="text-black/50 text-sm mb-4">{event.description}</p>
                     <div className="flex flex-wrap gap-4 mb-4">
-                      <div className="flex items-center gap-1 text-white/40 text-xs">
+                      <div className="flex items-center gap-1 text-black/40 text-xs">
                         <Calendar className="w-3 h-3" />
                         {event.date}
                       </div>
-                      <div className="flex items-center gap-1 text-white/40 text-xs">
+                      <div className="flex items-center gap-1 text-black/40 text-xs">
                         <MapPin className="w-3 h-3" />
                         {event.location}
                       </div>
@@ -264,10 +264,10 @@ imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=
 
           {/* Call to Action */}
           <div className="text-center">
-            <div className="bg-gradient-to-r from-primary-500/10 via-pink-500/10 to-primary-500/10 rounded-2xl p-8 border border-white/10">
-              <h3 className="text-2xl font-bold text-white mb-2">Want to partner with us?</h3>
-              <p className="text-white/50 mb-6">Let's work together to create more impact like the LUTH outreach</p>
-              <Link href="/contact" className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300">
+            <div className="bg-gradient-to-r from-primary-500/10 via-pink-500/10 to-primary-500/10 rounded-2xl p-8 border border-black/10">
+              <h3 className="text-2xl font-bold text-black mb-2">Want to partner with us?</h3>
+              <p className="text-black/50 mb-6">Let's work together to create more impact like the LUTH outreach</p>
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-black px-6 py-3 rounded-full font-semibold transition-all duration-300">
                 Contact Us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -284,14 +284,14 @@ imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=
           <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" />
           
           <div 
-            className="relative bg-dark-200 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden border border-white/10 shadow-2xl"
+            className="relative bg-dark-200 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden border border-black/10 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+              className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/10 hover:bg-black/20 flex items-center justify-center transition-colors"
             >
-              <X className="w-5 h-5 text-white" />
+              <X className="w-5 h-5 text-black" />
             </button>
 
             <div className="relative h-96 bg-gradient-to-br from-primary-500/20 to-pink-500/20 flex items-center justify-center">
@@ -304,14 +304,14 @@ imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=
                     className="object-cover object-center rounded-lg transition-transform duration-700"
                   />
              
-                <p className="text-white/40 text-sm">Image: {selectedImage.title}</p>
+                <p className="text-black/40 text-sm">Image: {selectedImage.title}</p>
               </div>
             </div>
 
             <div className="p-6">
-              <h3 className="text-xl font-bold text-white mb-2">{selectedImage.title}</h3>
-              <p className="text-white/60 text-sm">{selectedImage.description}</p>
-              <p className="text-white/40 text-xs mt-3">LUTH Outreach • April 2026</p>
+              <h3 className="text-xl font-bold text-black mb-2">{selectedImage.title}</h3>
+              <p className="text-black/60 text-sm">{selectedImage.description}</p>
+              <p className="text-black/40 text-xs mt-3">LUTH Outreach • April 2026</p>
             </div>
           </div>
         </div>

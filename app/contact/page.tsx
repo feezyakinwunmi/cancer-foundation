@@ -53,51 +53,51 @@ export default function ContactPage() {
 imageUrl="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&h=900&fit=crop"
       />
 
-      <section className="py-20 bg-dark-300">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Info */}
             <div>
-              <div className="bg-dark-200 rounded-2xl p-6 border border-white/10 mb-6">
+              <div className="bg-dark-200 rounded-2xl p-6 border border-black/10 mb-6">
                 <Heart className="w-10 h-10 text-primary-400 mb-4" />
-                <h3 className="text-white font-bold text-xl mb-4">Contact Information</h3>
+                <h3 className="text-black font-bold text-xl mb-4">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-primary-400" />
-                    <a href="mailto:info@childhoodcancerfoundation.org" className="text-white/60 hover:text-primary-400 transition-colors">
+                    <a href="mailto:info@childhoodcancerfoundation.org" className="text-black/60 hover:text-primary-400 transition-colors">
                       info@childhoodcancerfoundation.org
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="w-5 h-5 text-primary-400" />
-                    <a href="tel:+2348000000000" className="text-white/60 hover:text-primary-400 transition-colors">
+                    <a href="tel:+2348000000000" className="text-black/60 hover:text-primary-400 transition-colors">
                       +234 800 000 0000
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-primary-400" />
-                    <span className="text-white/60">Nigeria</span>
+                    <span className="text-black/60">Nigeria</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary-400" />
-                    <span className="text-white/60">Monday - Friday: 9AM - 6PM</span>
+                    <span className="text-black/60">Monday - Friday: 9AM - 6PM</span>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-dark-200 rounded-2xl p-6 border border-white/10">
-                <h3 className="text-white font-bold text-xl mb-4">Follow Us</h3>
+              <div className="bg-dark-200 rounded-2xl p-6 border border-black/10">
+                <h3 className="text-black font-bold text-xl mb-4">Follow Us</h3>
                 <div className="flex gap-3">
-                  <a href="#" className="bg-white/5 hover:bg-primary-500 text-white/60 hover:text-white p-3 rounded-full transition-all duration-300">
+                  <a href="#" className="bg-black/5 hover:bg-primary-500 text-black/60 hover:text-black p-3 rounded-full transition-all duration-300">
                     <FacebookIcon />
                   </a>
-                  <a href="#" className="bg-white/5 hover:bg-primary-500 text-white/60 hover:text-white p-3 rounded-full transition-all duration-300">
+                  <a href="#" className="bg-black/5 hover:bg-primary-500 text-black/60 hover:text-black p-3 rounded-full transition-all duration-300">
                     <InstagramIcon />
                   </a>
-                  <a href="#" className="bg-white/5 hover:bg-primary-500 text-white/60 hover:text-white p-3 rounded-full transition-all duration-300">
+                  <a href="#" className="bg-black/5 hover:bg-primary-500 text-black/60 hover:text-black p-3 rounded-full transition-all duration-300">
                     <TwitterIcon />
                   </a>
-                  <a href="#" className="bg-white/5 hover:bg-primary-500 text-white/60 hover:text-white p-3 rounded-full transition-all duration-300">
+                  <a href="#" className="bg-black/5 hover:bg-primary-500 text-black/60 hover:text-black p-3 rounded-full transition-all duration-300">
                     <LinkedInIcon />
                   </a>
                 </div>
@@ -106,58 +106,58 @@ imageUrl="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&h=
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-dark-200 rounded-2xl p-8 border border-white/10">
-                <h2 className="text-2xl font-bold text-white mb-6">Send us a message</h2>
+              <div className="bg-dark-200 rounded-2xl p-8 border border-black/10">
+                <h2 className="text-2xl font-bold text-black mb-6">Send us a message</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-white/60 text-sm mb-2">Your Name</label>
+                      <label className="block text-black/60 text-sm mb-2">Your Name</label>
                       <input
                         type="text"
                         value={formData.name}
                         onChange={(e) => setFormData({...formData, name: e.target.value})}
-                        className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-primary-500 transition-colors"
+                        className="w-full bg-black/10 border border-black/20 rounded-xl px-4 py-3 text-black placeholder-black/40 focus:outline-none focus:border-primary-500 transition-colors"
                         placeholder="John Doe"
                         required
                       />
                     </div>
                     <div>
-                      <label className="block text-white/60 text-sm mb-2">Email Address</label>
+                      <label className="block text-black/60 text-sm mb-2">Email Address</label>
                       <input
                         type="email"
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-primary-500 transition-colors"
+                        className="w-full bg-black/10 border border-black/20 rounded-xl px-4 py-3 text-black placeholder-black/40 focus:outline-none focus:border-primary-500 transition-colors"
                         placeholder="john@example.com"
                         required
                       />
                     </div>
                   </div>
                   <div>
-                    <label className="block text-white/60 text-sm mb-2">Subject</label>
+                    <label className="block text-black/60 text-sm mb-2">Subject</label>
                     <input
                       type="text"
                       value={formData.subject}
                       onChange={(e) => setFormData({...formData, subject: e.target.value})}
-                      className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-primary-500 transition-colors"
+                      className="w-full bg-black/10 border border-black/20 rounded-xl px-4 py-3 text-black placeholder-black/40 focus:outline-none focus:border-primary-500 transition-colors"
                       placeholder="How can we help?"
                       required
                     />
                   </div>
                   <div>
-                    <label className="block text-white/60 text-sm mb-2">Message</label>
+                    <label className="block text-black/60 text-sm mb-2">Message</label>
                     <textarea
                       rows={5}
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
-                      className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-primary-500 transition-colors resize-none"
+                      className="w-full bg-black/10 border border-black/20 rounded-xl px-4 py-3 text-black placeholder-black/40 focus:outline-none focus:border-primary-500 transition-colors resize-none"
                       placeholder="Tell us more..."
                       required
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-black py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     Send Message <Send className="w-4 h-4" />
                   </button>

@@ -108,7 +108,7 @@ export default function DonateCTA() {
               {/* Main Image */}
               <div className="relative h-[500px] w-full">
                 <Image
-                  src="/don.jpg"
+                  src="/dont.jpg"
                   alt="Child receiving care and support"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

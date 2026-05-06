@@ -53,7 +53,7 @@ export default function AboutBridge() {
           <div className="w-20 h-1 bg-gradient-to-r from-primary-400 to-primary-600 mx-auto mt-4 rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-40 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-30 items-center">
           {/* Left Side - Text Content */}
           <div 
             className={`transition-all duration-700 delay-300 ${
@@ -63,20 +63,20 @@ export default function AboutBridge() {
             <div className="relative">
               {/* Quote decoration */}
               <div className="absolute -top-6 -left-4 text-6xl text-primary-400/20 font-serif">"</div>
-              <p className="text-white/70 text-lg leading-relaxed mb-6 relative z-10 pl-4">
+              <p className="text-black/70 text-lg leading-relaxed mb-6 relative z-10 pl-4">
                 In Nigeria, a cancer diagnosis does not just threaten a child's life. 
                 It threatens the entire family. Parents leave jobs to become full-time caregivers. 
                 Savings disappear within weeks.
               </p>
             </div>
             
-            <p className="text-white/70 text-lg leading-relaxed mb-6">
+            <p className="text-black/70 text-lg leading-relaxed mb-6">
               Families who once stood strong are brought to their knees by hospital bills, 
               transport costs, and the weight of grief no one prepared them for.
             </p>
             
             <div className="bg-gradient-to-r from-primary-500/10 to-transparent p-6 rounded-2xl border-l-4 border-primary-500 mb-6">
-              <p className="text-white/80 text-lg leading-relaxed font-semibold">
+              <p className="text-black/80 text-lg leading-relaxed font-semibold">
                 The Children Cancer Care and Support Foundation exists because that should not be the end of the story.
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function AboutBridge() {
             <div className="flex items-center gap-4 mt-6">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 group"
+                className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-black px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 group"
               >
                 Read our full story
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -106,7 +106,7 @@ export default function AboutBridge() {
             }`}
           >
             {/* Main Image */}
-            <div className="relative mb-6 rounded-2xl overflow-hidden group">
+            <div className="relative mb-6 rounded-2xl w-[80%] overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-t from-dark-300 via-transparent to-transparent z-10" />
               <div className="relative h-64 w-full overflow-hidden">
                 <div className="absolute inset-0 bg-primary-500/10 z-10" />
@@ -115,13 +115,13 @@ export default function AboutBridge() {
                     src="/CCCSF 6.jpeg"
                     alt="Bridge Image"
                     fill
-                    className="object-fill opacity-80"
+                    className="object-cover opacity-80"
                   />
                   <Heart className="w-16 h-16 text-primary-400 animate-pulse" />
                 </div>
               </div>
               <div className="absolute bottom-4 left-4 z-20 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full">
-                <p className="text-white text-xs">Hope in action 🇳🇬</p>
+                <p className="text-black text-xs">Hope in action 🇳🇬</p>
               </div>
             </div>
 
@@ -135,14 +135,14 @@ export default function AboutBridge() {
               ].map((value, idx) => (
                 <div
                   key={value.title}
-                  className={`${value.bg} rounded-xl p-3 border border-white/5 hover:border-${value.color.replace('text-', '')}/30 transition-all duration-300 group cursor-pointer transform hover:-translate-y-1`}
+                  className={`${value.bg} rounded-xl p-3 border border-black/5 hover:border-${value.color.replace('text-', '')}/30 transition-all duration-300 group cursor-pointer transform hover:-translate-y-1`}
                   style={{ transitionDelay: `${idx * 100}ms` }}
                 >
                   <div className="flex items-center gap-2 mb-1">
                     <value.icon className={`w-4 h-4 ${value.color} group-hover:scale-110 transition-transform`} />
-                    <h3 className="text-white font-semibold text-sm">{value.title}</h3>
+                    <h3 className="text-black font-semibold text-sm">{value.title}</h3>
                   </div>
-                  <p className="text-white/40 text-xs">{value.desc}</p>
+                  <p className="text-black/40 text-xs">{value.desc}</p>
                 </div>
               ))}
             </div>
@@ -151,29 +151,29 @@ export default function AboutBridge() {
 
         {/* Floating Stats Bar */}
         <div 
-          className={`mt-12 bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10 transition-all duration-700 delay-700 ${
+          className={`mt-12 bg-black/5 backdrop-blur-sm rounded-2xl p-4 border border-black/10 transition-all duration-700 delay-700 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
           <div className="flex flex-wrap justify-around gap-4">
             <div className="text-center group cursor-pointer">
               <p className="text-2xl font-bold text-primary-400 group-hover:scale-110 transition-transform inline-block">100+</p>
-              <p className="text-white/40 text-xs">Children Supported</p>
+              <p className="text-black/40 text-xs">Children Supported</p>
             </div>
-            <div className="w-px bg-white/10" />
+            <div className="w-px bg-black/10" />
             <div className="text-center group cursor-pointer">
               <p className="text-2xl font-bold text-primary-400 group-hover:scale-110 transition-transform inline-block">₦0</p>
-              <p className="text-white/40 text-xs">To Families in Need</p>
+              <p className="text-black/40 text-xs">To Families in Need</p>
             </div>
-            <div className="w-px bg-white/10" />
+            <div className="w-px bg-black/10" />
             <div className="text-center group cursor-pointer">
               <p className="text-2xl font-bold text-primary-400 group-hover:scale-110 transition-transform inline-block">5</p>
-              <p className="text-white/40 text-xs">Support Programs</p>
+              <p className="text-black/40 text-xs">Support Programs</p>
             </div>
-            <div className="w-px bg-white/10" />
+            <div className="w-px bg-black/10" />
             <div className="text-center group cursor-pointer">
               <p className="text-2xl font-bold text-primary-400 group-hover:scale-110 transition-transform inline-block">10+</p>
-              <p className="text-white/40 text-xs">Partner Hospitals</p>
+              <p className="text-black/40 text-xs">Partner Hospitals</p>
             </div>
           </div>
         </div>

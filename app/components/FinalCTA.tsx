@@ -67,7 +67,7 @@ export default function FinalCTA() {
     <section className="relative py-16 sm:py-20 overflow-hidden">
       {/* Simplified Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-200 via-primary-900/5 to-dark-300" />
+        <div className="absolute inset-0 bg-white" />
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl animate-pulse delay-700" />
       </div>
@@ -99,28 +99,28 @@ export default function FinalCTA() {
               <span className="text-primary-400">right now</span>
             </h2>
             
-            <p className="text-white/60 text-base mb-4">
+            <p className="text-black/60 text-base mb-4">
               Your decision today could be the reason they survive.
             </p>
 
             {/* Impact Amounts - Compact */}
-            <div className="bg-white/5 rounded-xl p-4 border border-white/10 mb-6">
+            <div className="bg-black/5 rounded-xl p-4 border border-black/10 mb-6">
               <div className="flex items-center gap-2 mb-2">
                 <Heart className="w-4 h-4 text-primary-400" />
-                <span className="text-white text-sm font-semibold">Your Impact:</span>
+                <span className="text-black text-sm font-semibold">Your Impact:</span>
               </div>
               <div className="flex justify-around">
                 <div className="text-center">
                   <p className="text-xl font-bold text-primary-400">₦5,000</p>
-                  <p className="text-white/40 text-xs">Medication</p>
+                  <p className="text-black/40 text-xs">Medication</p>
                 </div>
                 <div className="text-center">
                   <p className="text-xl font-bold text-primary-400">₦20,000</p>
-                  <p className="text-white/40 text-xs">Treatment</p>
+                  <p className="text-black/40 text-xs">Treatment</p>
                 </div>
                 <div className="text-center">
                   <p className="text-xl font-bold text-primary-400">₦50,000+</p>
-                  <p className="text-white/40 text-xs">Hospital Care</p>
+                  <p className="text-black/40 text-xs">Hospital Care</p>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function FinalCTA() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <Link
                 href="/donate"
-                className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-primary-500/25 flex items-center justify-center gap-2"
+                className="bg-primary-500 hover:bg-primary-600 text-black px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-primary-500/25 flex items-center justify-center gap-2"
               >
                 <Heart className="w-4 h-4" />
                 Donate Now
@@ -138,7 +138,7 @@ export default function FinalCTA() {
               
               <Link
                 href="/volunteer"
-                className="border border-white/30 hover:border-primary-500 text-white/80 hover:text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                className="border border-black/30 hover:border-primary-500 text-black/80 hover:text-black px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <Users className="w-4 h-4" />
                 Become a Volunteer
@@ -164,10 +164,10 @@ export default function FinalCTA() {
                       <card.icon className={`w-5 h-5 ${card.iconColor}`} />
                     </div>
                     <div>
-                      <h3 className="text-white font-bold text-sm">{card.title}</h3>
-                      <p className="text-white/40 text-xs">{card.description}</p>
+                      <h3 className="text-black font-bold text-sm">{card.title}</h3>
+                      <p className="text-black/40 text-xs">{card.description}</p>
                     </div>
-                    <ChevronRight className={`w-4 h-4 text-white/30 ${card.textColor} transition-all ml-auto`} />
+                    <ChevronRight className={`w-4 h-4 text-black/30 ${card.textColor} transition-all ml-auto`} />
                   </div>
                 </Link>
               ))}
@@ -175,10 +175,10 @@ export default function FinalCTA() {
 
             {/* Emergency Contact - Compact */}
             <div className="mt-4 bg-red-500/10 rounded-xl p-3 border border-red-500/20 text-center">
-              <p className="text-white/50 text-xs">
+              <p className="text-black/50 text-xs">
                 <span className="text-red-400 font-semibold">Emergency:</span> 24/7 Helpline
               </p>
-              <p className="text-white font-bold text-base">+234 800 000 0000</p>
+              <p className="text-black font-bold text-base">+234 800 000 0000</p>
             </div>
           </div>
         </div>
@@ -189,9 +189,9 @@ export default function FinalCTA() {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
+          <div className="inline-flex items-center gap-2 bg-black/5 backdrop-blur-sm px-4 py-2 rounded-full border border-black/10">
             <Sparkles className="w-3 h-3 text-primary-400" />
-            <p className="text-white/50 text-xs">
+            <p className="text-black/50 text-xs">
               Every action brings us closer to a <span className="text-primary-400 font-semibold">Nigeria where no child fights cancer alone</span>
             </p>
             <Sparkles className="w-3 h-3 text-primary-400" />

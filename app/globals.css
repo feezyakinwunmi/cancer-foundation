@@ -16,7 +16,7 @@
   --color-primary-900: #000e26;
   
   --color-dark-100: #1a1a1a;
-  --color-dark-200: #0d0d0d;
+  --color-dark-200: #f3efef;
   --color-dark-300: #000000;
   
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -60,9 +60,9 @@
 
 /* Base styles */
 body {
-  background: linear-gradient(135deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%);
+  background: linear-gradient(135deg, #f3efef 0%, #f3efef 50%, #f3efef 100%);
   font-family: var(--font-sans);
-  color: white;
+  color: black;
 }
 
 
